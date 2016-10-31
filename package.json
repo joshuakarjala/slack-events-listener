@@ -1,0 +1,19 @@
+{
+  "name": "slack-events-listener",
+  "version": "1.0.0",
+  "description": "Easy to user web server which emits all events received from Slack Events API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FoundersAS/slack-events-listener.git"
+  },
+  "author": "Joshua Karjala-Svendsen <joshua@founders.as>, Tobias Baunbæk <tobias@founders.as>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FoundersAS/slack-events-listener/issues"
+  },
+  "homepage": "https://github.com/FoundersAS/slack-events-listener#readme"
+}
