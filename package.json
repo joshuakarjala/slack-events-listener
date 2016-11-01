@@ -1,6 +1,6 @@
 {
   "name": "slack-events-listener",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy to user web server which emits all events received from Slack Events API",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/FoundersAS/slack-events-listener/issues"
   },
-  "homepage": "https://github.com/FoundersAS/slack-events-listener#readme"
+  "homepage": "https://github.com/FoundersAS/slack-events-listener#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
