@@ -11,7 +11,7 @@ module.exports = function (options) {
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({extended: false}));
 
-  app.post(`${options.eventUrl || '/slack_event'}`, function (req, res) {
+  app.post(options.eventUrl || '/slack_event', function (req, res) {
     if (!req.body) return res.error(400, 'bad request homes');
 
     const body = req.body.payload ? JSON.parse(req.body.payload) : req.body;

@@ -1,5 +1,5 @@
 # slack-events-listener
-Easy to user web server which emits all events received from Slack Events API. It handles the intial verification with Slack and emits all events posted to you by Slack.
+Easy to use web server which emits all events received from Slack Events API. It handles the intial verification with Slack and emits all events posted to you by Slack.
 
 ## How To
 `npm install slack-events-listener`
