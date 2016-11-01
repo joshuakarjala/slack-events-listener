@@ -1,6 +1,6 @@
 {
   "name": "slack-events-listener",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy to user web server which emits all events received from Slack Events API",
   "main": "index.js",
   "scripts": {

@@ -9,7 +9,7 @@ module.exports = function (options) {
   const app = express();
 
   app.use(bodyParser.json());
-  app.use(bodyParser.urlencoded());
+  app.use(bodyParser.urlencoded({extended: false}));
 
   app.post(`${options.eventUrl || '/slack_event'}`, function (req, res) {
     if (!req.body) return res.error(400, 'bad request homes');
