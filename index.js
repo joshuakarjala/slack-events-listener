@@ -4,8 +4,7 @@ const events = require('events');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-module.exports = function (options) {
-  const that = new events.EventEmitter();
+module.exports = function (options, onevent) {
   const app = express();
 
   app.use(bodyParser.json());
@@ -20,14 +19,15 @@ module.exports = function (options) {
 
     if (body.type === 'url_verification') return res.send(body.challenge);
     if (body.type === 'event_callback') {
-      that.emit('slack_event', body);
-      return res.send('ok');
+      onevent(body, function (err) {
+        if (err) return res.error(500, 'something bad happened')
+        res.send('ok')
+      })
+      return
     }
 
     res.error(400, 'bad request man');
   });
 
   app.listen(options.port || 3000);
-
-  return that;
 };
