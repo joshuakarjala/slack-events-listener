@@ -27,7 +27,7 @@ module.exports = function (options) {
     res.error(400, 'bad request man');
   });
 
-  app.listen(port);
+  app.listen(options.port || 3000);
 
   return that;
 };
