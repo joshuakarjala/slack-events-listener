@@ -4,7 +4,7 @@ Middleware which emits all events received from Slack Events API. It handles the
 
 Easy to use with Express
 
-`slack-events-listener` is `connect` middlewarte. All that's required is that `req.body` is json.
+`slack-events-listener` is `connect` middleware. All that's required is that `req.body` is json.
 
 ## Install
 
@@ -34,8 +34,8 @@ app.use('/slack_events', bodyParser.json(), slackEvents);
 
 ## Parameters:
 
-- `verificationToken` *required* *Find this variable in your Slack application settings - if set to false will skip verification (for quick testing)*
-- `onSlackEvent` *required* *Every time we receive an event from Slack this function will be called with the event payload*
+- `verificationToken` **required** *Find this variable in your Slack application settings - if set to false will skip verification (for quick testing)*
+- `onSlackEvent` **required** *Every time we receive an event from Slack this function will be called with the event payload*
 
 ## Payload format
 List of payloads is available at https://api.slack.com/events-api#event_types
