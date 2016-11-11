@@ -39,3 +39,6 @@ app.use('/slack_events', bodyParser.json(), slackEvents);
 
 ## Payload format
 List of payloads is available at https://api.slack.com/events-api#event_types
+
+# Tips
+If you want to keep your bot "present" (*with green light*) in all your teams have a look at https://github.com/FoundersAS/slack-rtm-presence
